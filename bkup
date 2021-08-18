@@ -5,6 +5,7 @@
 cd
 rm backup.tbz
 tar -cjf Library.tbz -C ~/ ./Library/
+cp -u bin/bkup .backup/
 cp -ru .vim/ .backup/
 cp -u .vimrc .backup/
 cp -u .bashrc .backup/
