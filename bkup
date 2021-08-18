@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# Backup All Needed Files
+
+cd
+#rm backup.tbz
+tar -cjf Library.tbz -C ~/ ./Library/
+cp -u bin/bkup .backup/
+cp -ru .vim/ .backup/
+cp -u .vimrc .backup/
+cp -u .bashrc .backup/
+cp -u .config/alacritty/alacritty.yml .backup/
+cp -u .config/fish/config.fish .backup/
+cp -u .config/starship.toml .backup/
+cp -u Library.tbz .backup/
+#tar -cjf backup.tbz -C ~/ ./.backup/
+rm Library.tbz
+cp -u bin/bkup Git/configs/
+cp -u .vimrc Git/configs/
+cp -u .bashrc Git/configs/
+cp -u .config/alacritty/alacritty.yml Git/configs/
+cp -u .config/fish/config.fish Git/configs/
+cp -u .config/starship.toml Git/configs/
+cd Git/configs/
+git add -u
+git commit -m "synced most recent configs"
+git push -u origin main
+cd
+dropbox start
+cp -u backup.tbz Dropbox/
