@@ -13,7 +13,7 @@ cp -u .config/alacritty/alacritty.yml .backup/
 cp -u .config/fish/config.fish .backup/
 cp -u .config/starship.toml .backup/
 cp -u Library.tbz .backup/
-#tar -cjf backup.tbz -C ~/ ./.backup/
+tar -cjf backup.tbz -C ~/ ./.backup/
 rm Library.tbz
 cp -u bin/bkup Git/configs/
 cp -u .vimrc Git/configs/
