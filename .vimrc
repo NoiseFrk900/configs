@@ -62,9 +62,10 @@ nnoremap <leader>t :colo library<CR>
 nnoremap <leader>ww :call ColorGen()<CR>
 nnoremap <localleader>s iNoiseFrk900 <NoiseFreak900@gmail.com>
 nnoremap <localleader>g ihttps://github.com/noisefrk900/REPO.git
-"nnoremap <leader>
-"nnoremap <leader>
-"nnoremap <leader>
+inoremap <localleader>b {
+inoremap <localleader>v }
+inoremap <localleader><S-b> [
+inoremap <localleader><S-v> ]
 
 ""MISC MAPPINGS
 inoremap <silent> <C-f> <C-x><C-o>
