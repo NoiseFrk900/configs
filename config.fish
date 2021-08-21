@@ -107,6 +107,7 @@ alias pa='ps -A'
 alias cx='chmod +x'
 alias c='clear'
 alias tree='tree -C'
+alias cm='cmatrix -s -C cyan'
 
 #source /home/noisefrk900/alacritty/extra/completions/alacritty.bash
 starship init fish | source
