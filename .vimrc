@@ -12,7 +12,7 @@
 execute pathogen#infect()
 set termguicolors
 syntax enable
-colorscheme library
+colorscheme slyt
 set background=dark
 set hlsearch 
 set tabstop=8
