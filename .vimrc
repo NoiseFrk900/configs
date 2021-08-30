@@ -48,7 +48,7 @@ nnoremap <leader>c :split /home/noisefrk900/.vim/colors/library.vim<CR>
 nnoremap <leader>b :split /home/noisefrk900/.bashrc<CR>
 nnoremap <leader>f :split /home/noisefrk900/.config/fish/config.fish<CR>
 nnoremap <leader># :execute "leftabove sp ".bufname("#")<CR>
-nnoremap <leader>h 0
+nnoremap <leader>h :noh<CR>
 nnoremap <leader>l $
 nnoremap <leader>x **
 nnoremap <leader>/ /\v
