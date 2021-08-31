@@ -183,7 +183,7 @@ function! ColorGen()
 		execute "27,123s/".@a."/".@b."/g"
 endfunction 
 
-"STATUSLINE
+""STATUSLINE
 "set statusline+=%#StatusLine#
 set statusline+=\ buf:%2n
 set statusline+=\ %.25F
