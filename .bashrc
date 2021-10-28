@@ -4,7 +4,7 @@
 # | |\  ||  _|  \__, |
 # |_| \_||_|      /_/ 
 #
-# .bashc file for Noisefrk900
+# .bashrc file for Noisefrk900
 
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
