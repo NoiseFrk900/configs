@@ -66,6 +66,7 @@ inoremap <localleader>b {
 inoremap <localleader>v }
 inoremap <localleader><S-b> [
 inoremap <localleader><S-v> ]
+nmap <localleader>q jBi<CR>.<space><esc>0
 
 ""MISC MAPPINGS
 inoremap <silent> <C-f> <C-x><C-o>
