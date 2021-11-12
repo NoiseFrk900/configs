@@ -67,6 +67,8 @@ inoremap <localleader>v }
 inoremap <localleader><S-b> [
 inoremap <localleader><S-v> ]
 nmap <localleader>q jBi<CR>.<space><esc>0
+nmap <localleader>e ggfEdiWx 
+nmap <localleader>w :w<CR><esc>
 
 ""MISC MAPPINGS
 inoremap <silent> <C-f> <C-x><C-o>
