@@ -109,5 +109,26 @@ alias c='clear'
 alias tree='tree -C'
 alias cm='cmatrix -s -C cyan'
 
+function arc
+	cd Library
+	switch $argv[1]
+		case default
+		case -a 
+			vim Archive.zt
+		case -b
+			vim Bibliography.zt
+		case -c
+			vim Codex.zt
+		case -e
+			vim Enchiridion.zt
+		case -l
+			vim Lectures.zt
+		case -w
+			vim Writing.zt
+		case '*'
+			vim Compendium.zt
+		end
+end
+
 #source /home/noisefrk900/alacritty/extra/completions/alacritty.bash
 starship init fish | source
