@@ -35,7 +35,7 @@ nnoremap <silent> <F3> :set number! relativenumber!<CR>
 nnoremap <silent> <F4> :call StatuslineToggle()<CR>
 nnoremap <silent> <F5> :set spell!<CR>
 nnoremap <silent> <F6> :call WhitespaceIndicator()<CR>
-"nnoremap <silent> <F7>
+nnoremap <silent> <F7> :windo set scrollbind!<cr>
 "nnoremap <silent> <F8>
 "nnoremap <silent> <F9>
 "nnoremap <silent> <F10>
@@ -69,6 +69,8 @@ inoremap <localleader><S-v> ]
 nmap <localleader>q jBi<CR>.<space><esc>0
 nmap <localleader>e ggfEdiWx 
 nmap <localleader>w :w<CR><esc>
+nnoremap <localleader>z <C-w><
+nnoremap <localleader>a <C-w>>
 
 ""MISC MAPPINGS
 inoremap <silent> <C-f> <C-x><C-o>
