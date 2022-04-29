@@ -27,7 +27,7 @@ set listchars+=trail:-
 "KEY REMAPPINGS
 ""LEADERS
 let mapleader = ","
-let maplocalleader = "'"
+let maplocalleader = "\\"
 
 ""FUNCTIONS KEY MAPPINGS
 nnoremap <silent> <F2> :call FoldColumnToggle()<CR>
