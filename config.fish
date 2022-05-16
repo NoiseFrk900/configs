@@ -130,5 +130,8 @@ function arc
 		end
 end
 
+fish_add_path /opt/df_linux
+fish_add_path /opt/tor-browser_en-US
+
 #source /home/noisefrk900/alacritty/extra/completions/alacritty.bash
 starship init fish | source
