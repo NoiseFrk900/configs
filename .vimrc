@@ -229,6 +229,10 @@ augroup filetype_fish
 	au BufEnter *.fish nnoremap <localleader>c I#<esc>
 augroup END
 
+augroup filetype_html
+	au!
+	au BufEnter *.html set tabstop=2
+
 augroup filetype_py
 	au!
 	au BufEnter *.py nnoremap <localleader>c I#<esc>
