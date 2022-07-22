@@ -121,6 +121,8 @@ function arc
 			vim Codex.zt
 		case -e
 			vim Enchiridion.zt
+		case -h
+			vim Hypomnema.zt
 		case -l
 			vim Lectures.zt
 		case -w
