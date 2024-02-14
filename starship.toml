@@ -66,12 +66,12 @@ detect_extensions = "rb"
 fish_indicator = "🕊️ "
 disabled = false
 
-[time]
-disabled = false
-style = "#50d0fe bold"
-format = '[$time]($style) '
-time_format = "%Y%m%d%H%M %m/%d/%y"
-utc_time_offset = "-4"
+#[time]
+#disabled = false
+#style = "#50d0fe bold"
+#format = '[$time]($style) '
+#time_format = "%Y%m%d%H%M %m/%d/%y"
+#utc_time_offset = "-4"
 #time_range = "00:00:00-23:59:59"
 
 [git_branch]

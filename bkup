@@ -5,16 +5,21 @@
 cd
 rm backup.tbz
 tar -cjf Library.tbz -C ~/ ./Library/
+tar -cjf Archive.tbz -C ~/ ./Archive/
+tar -cjf SS.tbz -C ~/ ./spreadsheets/
 cp -u bin/bkup .backup/
-cp -ru .vim/ .backup/
-cp -u .vimrc .backup/
+cp -ru .config/nvim/ .backup/
 cp -u .bashrc .backup/
 cp -u .config/alacritty/alacritty.yml .backup/
 cp -u .config/fish/config.fish .backup/
 cp -u .config/starship.toml .backup/
 cp -u Library.tbz .backup/
+cp -u Archive.tbz .backup/
+cp -u SS.tbz .backup/
 tar -cjf backup.tbz -C ~/ ./.backup/
 rm Library.tbz
+rm Archive.tbz
+rm SS.tbz
 cp -u bin/bkup Git/configs/
 cp -u .vimrc Git/configs/
 cp -u .bashrc Git/configs/
@@ -27,4 +32,5 @@ git commit -m "synced most recent configs"
 git push -u origin main
 cd
 dropbox start
+# cp -ru .config/nvim/ .backup/
 cp -u backup.tbz Dropbox/

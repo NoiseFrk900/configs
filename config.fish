@@ -9,7 +9,7 @@
 # ============================================================================
 
 ### EXPORT ###
-set -U fish_greeting                                 # Supresses fish's intro message
+#set -U fish_greeting                                 # Supresses fish's intro message
 set TERM "xterm-256color"                         # Sets the terminal type
 set EDITOR "vim"
 set VISUAL "gvim"
@@ -95,7 +95,7 @@ alias vifm='./.config/vifm/scripts/vifmrun'
 
 # Config Files
 alias vc='vim /home/noisefrk900/.vim/colors/library.vim'
-alias vv='vim /home/noisefrk900/.vimrc'
+alias vv='vim /home/noisefrk900/.config/nvim/init.vim'
 alias bv='vim /home/noisefrk900/.bashrc'
 alias fv='vim /home/noisefrk900/.config/fish/config.fish'
 alias sv='vim /home/noisefrk900/.config/starship.toml'
@@ -108,8 +108,17 @@ alias cx='chmod +x'
 alias c='clear'
 alias tree='tree -C'
 alias cm='cmatrix -s -C cyan'
+alias vim='nvim'
+alias scim='sc-im'
+
+function scm
+	cd
+	cd spreadsheets
+	sc-im ss.sc
+end
 
 function arc
+	cd 
 	cd Library
 	switch $argv[1]
 		case default
@@ -132,8 +141,35 @@ function arc
 		end
 end
 
+function new
+	cd
+	cd Library
+	switch $argv[1]
+		case default
+		case -a 
+			vim (date +'A%Y%m%d%H%M.zt') 
+		case -b
+			vim (date +'B%Y%m%d%H%M.zt') 
+		case -c
+			vim (date +'C%Y%m%d%H%M.zt') 
+		case -e
+			vim (date +'E%Y%m%d%H%M.zt') 
+		case -h
+			vim (date +'H%Y%m%d%H%M.zt') 
+		case -l
+			vim (date +'L%Y%m%d%H%M.zt') 
+		case -w
+			vim (date +'%Y%m%d%H%M.zt') 
+		case '*'
+			vim Compendium.zt
+		end
+end
+
+export MPD_HOST=/run/mpd/socket
+export MPD_PORT=6600
 #fish_add_path /opt/df_linux
 #fish_add_path /opt/tor-browser_en-US
 
 #source /home/noisefrk900/alacritty/extra/completions/alacritty.bash
 starship init fish | source
+
